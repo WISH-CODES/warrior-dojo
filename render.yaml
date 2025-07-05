@@ -1,9 +1,12 @@
 services:
   - type: web
     name: warrior-dojo
+    env: docker
     plan: free
-    dockerfilePath: Dockerfile
+    repo: https://github.com/WISH-CODES/warrior-dojo
+    branch: main
+    buildCommand: ""
+    startCommand: ""
     envVars:
-      - key: PORT
-        value: 8000
-    healthCheckPath: /docs  # FastAPI docs endpoint for health checks
+      - key: PYTHON_VERSION
+        value: 3.11
