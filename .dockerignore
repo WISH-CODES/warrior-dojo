@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+
+# Environments
+.env
+.venv
+venv/
+env/
+
+# Build/Dependency files
+Dockerfile
+docker-compose.yml
+.dockerignore
+build/
+dist/
+*.egg-info/
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temp files# Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+python-env/
+
+# Python version manager
+.python-version
+
+# Logs and temp files
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Package and build artifacts
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitattributes
+.gitignore
+
+*.tmp
+*.bak

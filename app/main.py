@@ -6,13 +6,11 @@ from . import models
 
 app = FastAPI()
 
-# Create all tables
-models.Base.metadata.create_all(bind=engine)
-# Register routers
-app.include_router(auth.router)
-app.include_router(warriors.router)
-app.include_router(users.router)
+# Routers
+app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
+app.include_router(warriors.router, prefix="/warriors", tags=["Warriors"])
+app.include_router(users.router, prefix="/users", tags=["Users"])
 
-@app.get("/")
-def root():
+@app.get("/", tags=["Root"])
+async def root():
     return {"message": "Welcome to Warrior Dojo 🥷"}

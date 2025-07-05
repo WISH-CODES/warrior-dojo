@@ -1,33 +1,33 @@
-# Core Packages
+# Core
 fastapi==0.95.0
 pydantic==1.10.14
-starlette==0.26.1  # Must be <0.27.0 for FastAPI 0.95.0
+starlette==0.26.1  # FastAPI 0.95.0 requirement
 
 # ASGI Server
-uvicorn==0.35.0
+uvicorn[standard]==0.22.0  # Use [standard] to auto-install `httptools`, `websockets`
 gunicorn==21.2.0
 
-# Security & Authentication
-python-jose==3.5.0
+# Security
+python-jose==3.3.0
 bcrypt==3.2.2
-python-multipart==0.0.20
-passlib==1.7.4
-cryptography==45.0.5
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.5
+cryptography==39.0.0
 
 # Database
-SQLAlchemy==2.0.41
-greenlet==3.2.3
+SQLAlchemy==1.4.46  #  works best with FastAPI 0.95.0
+greenlet==2.0.2
 
-# Utilities
-python-dotenv==1.1.1
-httpx==0.28.1
-Jinja2==3.1.6
-orjson==3.10.18
-PyYAML==6.0.2
-dnspython==2.7.0
+# Utility
+python-dotenv==1.0.0
+httpx==0.23.3
+dnspython==2.3.0
+PyYAML==6.0
+Jinja2==3.1.2
+orjson==3.8.8  # Stable version for Pydantic v1
 
-# Development Tools (Optional)
-pytest==8.4.1
-watchfiles==1.1.0
-rich==14.0.0
-typer==0.16.0
+# Dev (optional)
+pytest==7.2.2
+watchfiles==0.19.0
+typer==0.7.0
+rich==13.3.3
