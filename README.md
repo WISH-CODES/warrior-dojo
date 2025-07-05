@@ -74,11 +74,11 @@ http://localhost:8000/docs
 
 ✅ CRUD for Warriors
 
-⏳ Unit tests
+✅ Unit tests
 
 ⏳ PostgreSQL for production
 
-⏳ CI/CD setup
+✅ CI/CD setup
 
  License
 MIT — use it, remix it, level up with it.
